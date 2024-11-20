@@ -1,0 +1,115 @@
+/* Fontes e cores */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o body ocupe toda a altura da janela */
+  }
+  
+  header {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    background: linear-gradient(135deg, #00f2fe, #4facfe);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+  }
+  
+  nav ul li button {
+    background: white;
+    color: #4facfe;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  nav ul li button:hover,
+  nav ul li button.active {
+    background: #4facfe;
+    color: white;
+    transform: translateY(-2px);
+  }
+  
+  main {
+    flex: 1; /* Faz o conteúdo principal ocupar o espaço disponível */
+    padding: 20px;
+  }
+  
+  .tab-content {
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .image-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .image-container img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px;
+    color: white;
+    background: #4facfe;
+    position: relative; /* Remove qualquer fixação para que funcione com flexbox */
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    nav ul li button {
+      width: 80%;
+      margin: auto;
+    }
+  }
+  

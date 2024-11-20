@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bem-estar e Saúde</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Bem-estar e Saúde</h1>
+    <p>Descubra como cuidar da sua mente e do seu corpo.</p>
+    <nav>
+      <ul>
+        <li><button class="tab-btn active" data-tab="mental"><span>🧠</span> Saúde Mental</button></li>
+        <li><button class="tab-btn" data-tab="fisica"><span>💪</span> Saúde Física</button></li>
+        <li><button class="tab-btn" data-tab="questionario"><span>📝</span> Questionário</button></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section id="mental" class="tab-content">
+      <h2>Saúde Mental</h2>
+      <p>### Saúde Mental: Por Que Devemos Falar Sobre Isso?
+
+        Você já se sentiu sobrecarregado, estressado ou até mesmo perdido em meio às responsabilidades e expectativas? É importante saber que você não está sozinho. Falar sobre saúde mental nunca foi tão necessário, especialmente nas escolas, onde passamos boa parte do nosso dia. Mas o que exatamente é saúde mental e por que ela importa tanto?
+        
+        #### O que é saúde mental?
+        
+        Saúde mental não é apenas a ausência de doenças. É sobre como lidamos com nossos sentimentos, nos conectamos com outras pessoas e enfrentamos os desafios do dia a dia. Ela influencia diretamente a forma como aprendemos, fazemos amizades e até como nos vemos no mundo.
+        
+        Agora, pense: se cuidamos do nosso corpo praticando esportes e comendo bem, por que não fazemos o mesmo com nossa mente?
+        
+        ---
+        
+        ### A importância da saúde mental no ambiente escolar
+        
+        As escolas são muito mais do que lugares para aprender matemática ou história. Elas são onde descobrimos quem somos, fazemos amigos e enfrentamos momentos difíceis. E aqui está a verdade: **quando estamos bem emocionalmente, tudo fica mais fácil.** 
+        
+        1. **Melhor Desempenho**: Quem nunca teve dificuldade para se concentrar quando está triste ou preocupado? Cuidar da mente ajuda a focar nos estudos e alcançar melhores resultados.
+        
+        2. **Amizades Mais Fortes**: Quando nos sentimos bem, é mais fácil nos conectarmos com outras pessoas e resolver conflitos de forma saudável.
+        
+        3. **Menos Pressão, Mais Conexão**: Sabia que mais de 30% dos jovens sofrem de ansiedade ou estresse na escola? Aprender a lidar com isso faz toda a diferença para viver de forma mais leve.
+        
+        ---
+        
+        ### Como cuidar da saúde mental?
+        
+        A boa notícia é que existem formas de cuidar da nossa mente no dia a dia. Aqui estão algumas dicas que podem ajudar você a começar:
+        
+        - **Converse com Alguém**: Falar sobre o que sente não é fraqueza. Seja com amigos, professores ou psicólogos, abrir o coração pode aliviar o peso.
+        
+        - **Não se Compare**: Cada pessoa tem seu próprio ritmo. Você não precisa ser perfeito para ser incrível.
+        
+        - **Reserve um Tempo Para Você**: Gosta de música, jogos ou esportes? Dedique um tempo para aquilo que faz você feliz.
+        
+        - **Peça Ajuda**: Se estiver se sentindo sobrecarregado, procure um psicólogo ou um adulto de confiança. Não espere até que tudo pareça insuportável.
+        
+        ---
+        
+        ### Por que isso importa tanto?
+        
+        Porque sua mente é tão importante quanto seu corpo. Saúde mental é sobre aprender a lidar com os altos e baixos da vida e entender que está tudo bem pedir ajuda quando precisar. Na escola, falar sobre isso cria um ambiente onde todos se sentem apoiados e entendidos.
+        
+        Lembre-se: **você é mais forte do que imagina, e cuidar de si mesmo é o primeiro passo para alcançar tudo o que deseja.**
+        
+        Que tal começar agora? 🌟</p>
+      <div class="image-container">
+        <img src="https://source.unsplash.com/600x400/?meditation,mental-health" alt="Meditação e saúde mental">
+      </div>
+    </section>
+    
+    <section id="fisica" class="tab-content hidden">
+      <h2>Saúde Física</h2>
+      <p>Pratique atividades físicas regularmente, mantenha uma alimentação balanceada e cuide do seu corpo como um templo.</p>
+      <div class="image-container">
+        <img src="https://source.unsplash.com/600x400/?fitness,health" alt="Atividades físicas e saúde">
+      </div>
+    </section>
+    
+    <section id="questionario" class="tab-content hidden">
+      <h2>Questionário de Autoavaliação</h2>
+      <form id="questionnaire-form">
+        <label for="stress">Você sente muito estresse no dia a dia?</label>
+        <select id="stress" name="stress">
+          <option value="sim">Sim</option>
+          <option value="nao">Não</option>
+        </select>
+
+        <label for="sono">Você dorme bem regularmente?</label>
+        <select id="sono" name="sono">
+          <option value="sim">Sim</option>
+          <option value="nao">Não</option>
+        </select>
+
+        <label for="interesse">Você tem interesse em procurar um psicólogo?</label>
+        <select id="interesse" name="interesse">
+          <option value="sim">Sim</option>
+          <option value="nao">Não</option>
+        </select>
+
+        <button type="submit">Enviar</button>
+      </form>
+      <div id="result"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Bem-estar e Saúde. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
