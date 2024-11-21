@@ -94,7 +94,21 @@ body {
     background: #4facfe;
     position: relative; /* Remove qualquer fixação para que funcione com flexbox */
   }
-  
+  .action-button {
+    background-color: #4facfe; /* Cor verde */
+    color: white; /* Texto branco */
+    padding: 15px 32px; /* Tamanho do botão */
+    font-size: 16px; /* Tamanho do texto */
+    border: none;
+    border-radius: 15px; /* Bordas arredondadas */
+    cursor: pointer; /* Mudança de cursor ao passar o mouse */
+    text-decoration: none; /* Remove sublinhado do link */
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+.action-button:hover {
+    background-color: #299bff; /* Cor mais escura ao passar o mouse */
+}
   footer p {
     margin: 0;
     font-size: 0.9rem;
